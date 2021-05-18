@@ -13,7 +13,7 @@ workflows:
         APP_STORE_CONNECT_PRIVATE_KEY: Encrypted(MIGTAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBHkwdwIBAQQg2J7Qs4mGEH7XkATwRpRlocX6YCyGySPVus4UlMVQtwGgCgYIKoZIzj0DAQehRANCAARQj1E07mLWiHCpii8nA5mXkgf3zGGxmJfdg93mNqb5Es5r2c41yl1h6sYR6t/8ssxZOgTYmja1puAMMqd+VmNO) # <-- Put your encrypted App Store Connect Private Key here 
         CERTIFICATE_PRIVATE_KEY: Encrypted(MIIEowIBAAKCAQEAlkKrtCx/LHRGVRrBBf/K5l7oHLxcqmJAwVuftk8Fts1iaodhDjJqEsDthKvz1N6FB+fI4FJilry29g5cIP2A+WTP9W2PGSNHWBFW5vCSy4Sh/jMOZWOmcdFdwOA99/jZTJXuR3GCUVgD2sAFb/9I4r5El0Gik4eHtcFEtlSf2KPuSB4SfKF7TD//JUUxOD1H++f7X3JraaIX+my2a+zqnawY03MUaP6v2P/iNugfp3hJgkyvHJ6D0cpswuR3rVCYh+7hK9wutlnZoQ3KYYTQRyn6MZ6mU3njkLExqIaYcEgjByp6eAMV+zJNI11KOu53X7CktZEwt/uhue+EvVRb5wIDAQABAoIBADw5To5xQytzEvlrNrAL3KvGoCtcR5u2s5OMAJBWTcj9upNN3VWOWTtY/hmtvZW09ga8HKPkAUW/L2mhScWjNT0/7aXFmpQNsruWf4kiJQPTDgZPOlbiwMRfkL8MYWnw4E80zILv+LZXm3vieItx+yl97wncsaeFq5vqcXrOoh52wILSmUVgxQkCPCBx5O2ILr+rfAUTLhO0irvzOqWnpVKGarJGjjr/avMjUcdp7BD1sFYpD06o97WvKj8FYfBxpZIFGT+TZ/MZvLVqMNuDc/xRPj5LYQtsBnAT4CST95KMmsmN3ZZoz29mZWilsjUrlM41umcsljThfXPf6AU/GRkCgYEAxS0yDCGrM40lxBDSfIFMBZM0JQUDmj05h5kDYQ1pKDprK4db3KSpvqbk29oaZH5oq1FftS5onEQHI3zVSObVa5gS/WqYEle9DwTEwzDvAPvQ3Sk2LhfV/4v2DcHNmK3LBk3ueSqDt/ESO5xZmpx6P74kw2FlXM35oc1/5jnDzhUCgYEAwxZjlDWnV8LuFupTSmt6P1clxZqjVlDN0kTWGoEKypUd9zPFlG/YuCMGmRAdXw0rjplP3XcIb3xPEKWufgqyq2U77MD1Ih/jyx2lVJiQH3e9PTMKg6XGMr8IqIf15pmfKWRUfF+Xk/3ixv0xt9YRLZC9LfkLqXwiMo0EvC3xvQsCgYEAmch4IjIYPqq1a8fbArQtQKPgpYbVmnRp7DIRCp7VB0UY1OhLYzkiEspD8JyYvQxCQmvDA6JggJAmKS1xg9xVVAdVuERsutGnaJFFjR8bKV89NWCxGx4ID7lvfKdM3OmfURlzBxl7hfkFSWzWDdpBFnoMXj4WOl2Ddwi52ivvZUkCgYBPgxWM950/6MQPdOwDnfCSVlufwVonOQHaXJIC9WtHjCVNdr1ltXxX+Hac9fNypTSGhzgE5Jn8jmbPOyf2WTffIYCeCzsd8G9wfqG+6/t5x9zKT75OT8eLMU8/GUMA/MXhIfJJStDF0amXPuT/r3EK6D4iuammJ2Dsx4sRg4xOZwKBgAHYQ7+gzTYNv2LY5jK6/ZA+bCnKzb1n//OL1zzaVVIUifbJPZhDKdf4bdYtn9Rxm5h7mjxWECfoVoBClcsL7G2zGk9ZwbNtkJQGbN2xV3A6HTzPLfVto1jTqYHDXF6aoHc23/6n5Ock1hnm8SKkjyCa9nRUawaVyDS2w55rN24P) # <-- Put your encrypted Certificate Private Key here 
         APPLE_ID: Encrypted(pishnjak@ya.ru) # <-- Put your encrypted Apple Id email address here
-        APPLE_APP_SPECIFIC_PASSWORD: Encrypted(030303aA # <-- Put your encrypted App Specific password here
+        APPLE_APP_SPECIFIC_PASSWORD: Encrypted(030303aA) # <-- Put your encrypted App Specific password here
         BUNDLE_ID: "ru.barnlab.kassis" # <-- Put your bundle id here
         APP_STORE_ID: 1111111111 # <-- Use the TestFlight Apple id number (An automatically generated ID assigned to your app) found under General > App Information > Apple ID. 
       flutter: stable
@@ -72,5 +72,5 @@ workflows:
           success: true               # To receive a notification when a build succeeds
           failure: false              # To not receive a notification when a build fails
       app_store_connect:   # https://docs.codemagic.io/publishing-yaml/distribution              
-        apple_id: $pishnjak@ya.ru    
-        password: $030303aA
+        apple_id: $APPLE_ID
+        password: $APPLE_APP_SPECIFIC_PASSWORD
