@@ -48,20 +48,20 @@ workflows:
       artifacts:
         - build/ios/ipa/*.ipa
         - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.dSYM
-      publishing:
-        app_store_connect:   # https://docs.codemagic.io/publishing-yaml/distribution              
-          apple_id: appleId@example.com # <-- Put your Apple Id here    
-          password: Encrypted(...) # <-- Put your encrypted App-specific password here
-        email:
-            recipients:
-              - user1@example.com
-              - user2@example.com
-            notify:
-              success: true
-              failure: true
-        slack:
-            channel: '#builds'
-            notify_on_build_start: true    # To receive a notification when a build starts
-            notify:
-              success: false               # To not receive a notification when a build succeeds
-              failure: false 
+      #publishing:
+      #  app_store_connect:   # https://docs.codemagic.io/publishing-yaml/distribution              
+      #    apple_id: appleId@example.com # <-- Put your Apple Id here    
+      #    password: Encrypted(...) # <-- Put your encrypted App-specific password here
+      #  email:
+      #      recipients:
+      #        - user1@example.com
+      #        - user2@example.com
+      #      notify:
+      #       success: true
+      #        failure: true
+      #  slack:
+      #      channel: '#builds'
+      #      notify_on_build_start: true    # To receive a notification when a build starts
+      #      notify:
+      #        success: false               # To not receive a notification when a build succeeds
+      #        failure: false 
