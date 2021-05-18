@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "719861971733",
+    "project_id": "kassis-b202e",
+    "storage_bucket": "kassis-b202e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:719861971733:android:1dad0d3606174df023871c",
+        "android_client_info": {
+          "package_name": "ru.barnlab.kassis"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "719861971733-hbvb4ku7b8ft57embbn4sqr2bqps0trj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ru.barnlab.kassis",
+            "certificate_hash": "44409ab07631293b0122e5c6c7a0baa810ef4bba"
+          }
+        },
+        {
+          "client_id": "719861971733-0h23q7cfaf087shojuo838prcj8u02gg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdCHhggWNP_1kQ2xqFNg_gaNRQ93KLpy8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "719861971733-0h23q7cfaf087shojuo838prcj8u02gg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

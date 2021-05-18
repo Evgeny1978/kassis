@@ -4,6 +4,7 @@ class Assets {
 
   static const String iconsIcHeaderLogo = 'assets/icons/ic_header_logo.png';
   static const String iconsIcHeaderLogoX1 = 'assets/icons/ic_header_logo_x1.png';
+  static const String iconsIcHomePage1 = 'assets/icons/ic_home_page_1.png';
   static const String iconsIcIconArrowBack = 'assets/icons/ic_icon_arrow_back.png';
   static const String iconsIcMenu = 'assets/icons/ic_menu.png';
   static const String iconsIcMenuX1 = 'assets/icons/ic_menu_x1.png';
@@ -11,10 +12,12 @@ class Assets {
   static const String iconsIcPlaceholder = 'assets/icons/ic_placeholder.png';
   static const String iconsIcPromotion = 'assets/icons/ic_promotion.png';
   static const String iconsImgAboutPage = 'assets/icons/img_about_page.jpeg';
+  static const String iconsImgActions2 = 'assets/icons/img_actions_2.jpg';
   static const String iconsImgActionsPage = 'assets/icons/img_actions_page.png';
   static const String iconsImgContactsPage = 'assets/icons/img_contacts_page.png';
   static const String iconsImgFeedbackPage = 'assets/icons/img_feedback_page.png';
   static const String iconsImgHomePage = 'assets/icons/img_home_page.png';
+  static const String iconsImgHomePage3 = 'assets/icons/img_home_page_3.png';
   static const String iconsImgNewsPage = 'assets/icons/img_news_page.png';
   static const String iconsImgNotificationsPage = 'assets/icons/img_notifications_page.png';
 
