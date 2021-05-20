@@ -6,5 +6,8 @@ target 'Runner' do
   use_frameworks!
 
   # Pods for Runner
-
+  pod 'Firebase/Auth'
+  pod 'Firebase/Core'
+  pod 'Firebase/Firestore'
+  
 end
