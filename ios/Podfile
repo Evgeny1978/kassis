@@ -11,9 +11,9 @@ target 'Runner' do
 # Pods for Runner
 end 
 
-pod 'Firebase/Auth'
-pod 'Firebase/Core'
-pod 'Firebase/Firestore'
+#pod 'Firebase/Auth'
+#pod 'Firebase/Core'
+#pod 'Firebase/Firestore'
 
 post_install do |installer|
    installer.pods_project.targets.each do |target|
