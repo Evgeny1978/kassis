@@ -9,6 +9,7 @@ target 'Runner' do
   use_frameworks!
   
 # Pods for Runner
+end 
 
 pod 'Firebase/Auth'
 pod 'Firebase/Core'
@@ -20,6 +21,4 @@ post_install do |installer|
         config.build_settings.delete 'IPHONEOS_DEPLOYMENT_TARGET'
      end
   end
-end
-
 end
