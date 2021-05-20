@@ -15,7 +15,7 @@ workflows:
         APPLE_ID: Encrypted(Z0FBQUFBQmdvNU5uM1FwWnF0N2s0dnA3elgwaFJoTUk5SXA4ZEJ3NTNEZmhTcmNUUHRVVkE0OTNuM3RXaGZrZ1FwMnZrbkxyZnF1WFFoZ3ZFcGRCZHBGaG9HZGJPSkRsVVE9PQ==) # <-- Put your encrypted Apple Id email address here
         APPLE_APP_SPECIFIC_PASSWORD: Encrypted(Z0FBQUFBQmdwS2wxWmttNFczUzhUZTJpUmVKSVREeS13MGkwQ0ZVN3VLME5IU3pkd2JBUlRHcmlsM3V6NjhQUTBabEQxLW5fOEtsUFhZV3JHMG80dHZIVlA3elZ4dS0tNzBFVTNYMHFYbDR4a21BRFFZNW1ZeDQ9) # <-- Put your encrypted App Specific password here
         BUNDLE_ID: "ru.barnlab.kassis" # <-- Put your bundle id here
-        APP_STORE_ID: 1111111111 # <-- Use the TestFlight Apple id number (An automatically generated ID assigned to your app) found under General > App Information > Apple ID. 
+        APP_STORE_ID: 1000000001 # <-- Use the TestFlight Apple id number (An automatically generated ID assigned to your app) found under General > App Information > Apple ID. 
       flutter: stable
       xcode: latest
       cocoapods: default
